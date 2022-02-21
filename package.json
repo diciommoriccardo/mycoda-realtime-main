@@ -1,0 +1,32 @@
+{
+  "name": "mycoda-realtime",
+  "version": "1.0.0",
+  "description": "MyCoda realtime service",
+  "main": "app.js",
+  "scripts": {
+    "start": "node -r esm app.js",
+    "dev": "SET NODE_ENV=development&& nodemon -r esm app.js",
+    "prod": "SET NODE_ENV=production&& node -r esm app.js",
+    "client": "node -r esm client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierluigizagaria/mycoda-realtime.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pierluigizagaria/mycoda-realtime/issues"
+  },
+  "homepage": "https://github.com/pierluigizagaria/mycoda-realtime#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "jsonwebtoken": "^8.5.1",
+    "socket.io": "^4.1.2",
+    "socket.io-client": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
